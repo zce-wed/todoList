@@ -213,6 +213,9 @@ export default {
 }
 .app-content-middle {
   .content-middle-item {
+    &:hover{
+        background-color: cadetblue;
+      }
     line-height: 50px;
     display: flex;
     .content-middle-left {
@@ -228,11 +231,15 @@ export default {
             text-decoration: line-through;
         }
       flex: 8;
+      
     }
 
     .content-middle-right {
       flex: 1;
       display: none;
+      &:hover{
+        cursor: pointer;
+      }
     }
   }
 }
@@ -242,23 +249,34 @@ export default {
   }
 }
 .app-content-bottom {
+  text-align: center;
     height: 50px;
+    // background-color: antiquewhite;
     align-items: center;
     display: flex;
     justify-content: space-between;
   .content-bottom-left {
+    // background-color: aqua;
+    flex: 1;
 
   }
 
   .content-bottom-middle {
+    // background-color: black;
+    flex: 4;
     a {
         display: inline-block;
         margin-left: 10px;
+        text-decoration: none;
     }
   }
 
   .content-bottom-right {
-
+    // background-color: blue;
+    flex: 1;
+    &:hover{
+      cursor:pointer
+    }
   }
 }
 </style>

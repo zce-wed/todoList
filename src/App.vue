@@ -11,6 +11,9 @@
         <Footer></Footer>
       </div>
     </div>
+    <div class="texiao">
+      <texiao></texiao>
+    </div>
   </div>
 </template>
 
@@ -18,6 +21,7 @@
 import Header from "./components/Header.vue";
 import Footer from "./components/Footer.vue";
 import Content from "./components/Content.vue";
+import texiao from "./components/texiao.vue"
 
 export default {
   name: "App",
@@ -25,10 +29,10 @@ export default {
     Header,
     Footer,
     Content,
+    texiao
   },
 };
 </script>
-
 <style lang='less' scoped>
 * {
   padding: 0;
@@ -36,9 +40,16 @@ export default {
   box-sizing: border-box;
 }
 #app {
-  margin: 0 auto;
-  background-image: linear-gradient(#e66465, #9198e5);
-  width: 600px;
+  box-shadow: 5px 7px 30px #9696a0;
+    border-radius: 20px;
+    position: absolute;
+    z-index: 99;
+    left: 50vw;
+    left: 25vw;
+    top: 50vh;
+    transform: translateY(-50%);
+    background-image: linear-gradient(#e66465, #9198e5);
+    width: 600px;
   .app-header {
   }
 
@@ -51,5 +62,15 @@ export default {
     footer {
     }
   }
+  .texiao{
+    background-color: tomato;
+    position: absolute;
+
+  }
 }
 </style>
+
+
+
+
+
