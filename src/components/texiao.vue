@@ -217,10 +217,11 @@ activated() {}, //如果页面有keep-alive缓存功能，这个函数会触发
 			height: 100vw;
 			background: rgb(243, 239, 239);
 			touch-action: none;
-			content-zooming: none;
+			/* content-zooming: none; */
 		}
 
 		canvas {
+
             opacity: 1;
             top: 0px;
 			position: absolute;
